@@ -1,0 +1,14 @@
+{application, calypso_json, [
+  {description, "Calypso JSON helpers."},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+    kernel,
+    stdlib,
+    jsx
+  ]},
+  { modules, [ calypso_json ]},
+  {env, [
+    { encode_option, [ {indent, 2}, { space, 1} ]}
+  ]}
+]}.
